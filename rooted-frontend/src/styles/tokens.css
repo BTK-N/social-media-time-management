@@ -1,0 +1,242 @@
+/*
+ * ROOTED DESIGN SYSTEM - TOKENS
+ * Metaphor: Grow Deep in a Shallow World
+ * 
+ * Layer 1: Primitive Tokens (Values)
+ * Layer 2: Semantic Tokens (Meaning)
+ * Layer 3: Component Tokens (Context)
+ */
+
+:root {
+  /* =========================================
+     LAYER 1: PRIMITIVE TOKENS
+     ========================================= */
+
+  /* COLOR SCALES (No pure black/white, organic warmth) */
+  
+  /* Cream: Off-white canvas, the raw paper */
+  --color-cream-50: #FAF8F5;
+  --color-cream-100: #F3EFEA;
+  
+  /* Sand: Warm neutral, the ground and dust */
+  --color-sand-50: #F5F2EB;
+  --color-sand-100: #EBE5D9;
+  --color-sand-200: #DDD4C2;
+  --color-sand-300: #CDC0A8;
+  --color-sand-400: #BCA98D;
+  --color-sand-500: #AA9372;
+  --color-sand-600: #8D7759;
+  --color-sand-700: #6F5D45;
+  --color-sand-800: #554735;
+  --color-sand-900: #3D3326;
+
+  /* Bark: Deep warm browns, the trunk and soil */
+  --color-bark-50: #F4F1EE;
+  --color-bark-100: #E3DCD5;
+  --color-bark-200: #CFC2B5;
+  --color-bark-300: #B8A593;
+  --color-bark-400: #A38B74;
+  --color-bark-500: #8C7055;
+  --color-bark-600: #715A44;
+  --color-bark-700: #574534;
+  --color-bark-800: #3E3125;
+  --color-bark-900: #261E16; /* Near-black with a warm cast */
+
+  /* Sage: Primary green, calm and mature */
+  --color-sage-50: #F0F4F1;
+  --color-sage-100: #D8E2DA;
+  --color-sage-200: #BCCFC0;
+  --color-sage-300: #9EBBA4;
+  --color-sage-400: #83A68A;
+  --color-sage-500: #679270;
+  --color-sage-600: #53755A;
+  --color-sage-700: #3F5944;
+  --color-sage-800: #2C3E30;
+  --color-sage-900: #1B261D;
+
+  /* Moss: Darker green, shade and depth */
+  --color-moss-50: #EDF1EE;
+  --color-moss-100: #D0DBD3;
+  --color-moss-200: #ADC2B3;
+  --color-moss-300: #88A691;
+  --color-moss-400: #678E72;
+  --color-moss-500: #467653;
+  --color-moss-600: #375E42;
+  --color-moss-700: #2B4833;
+  --color-moss-800: #1F3324;
+  --color-moss-900: #132017;
+
+  /* Leaf: Brighter spring green, for growth moments */
+  --color-leaf-50: #F1F6ED;
+  --color-leaf-100: #DBE8CE;
+  --color-leaf-200: #C2D9AB;
+  --color-leaf-300: #A7CA87;
+  --color-leaf-400: #90BD66;
+  --color-leaf-500: #78B045;
+  --color-leaf-600: #5F8C36;
+  --color-leaf-700: #486A29;
+  --color-leaf-800: #32491D;
+  --color-leaf-900: #1F2D12;
+
+  /* Terracotta: Warm clay accent, warmth + gentle warning */
+  --color-terracotta-50: #F9F1EF;
+  --color-terracotta-100: #F0DCD7;
+  --color-terracotta-200: #E4C1B9;
+  --color-terracotta-300: #D7A499;
+  --color-terracotta-400: #CB8A7C;
+  --color-terracotta-500: #BE6F5E;
+  --color-terracotta-600: #99594B;
+  --color-terracotta-700: #744439;
+  --color-terracotta-800: #523029;
+  --color-terracotta-900: #331E1A;
+
+  /* Ochre: Warm mid-tone, used sparingly */
+  --color-ochre-50: #FBF6EB;
+  --color-ochre-100: #F5E8CD;
+  --color-ochre-200: #EEDBAB;
+  --color-ochre-300: #E5CD88;
+  --color-ochre-400: #DDC069;
+  --color-ochre-500: #D4B348;
+  --color-ochre-600: #AA9039;
+  --color-ochre-700: #816D2B;
+  --color-ochre-800: #5B4D1E;
+  --color-ochre-900: #383013;
+
+  /* Charcoal: Near black with a warm cast */
+  --color-charcoal-50: #EAEAE9;
+  --color-charcoal-100: #C9C9C7;
+  --color-charcoal-200: #A5A5A1;
+  --color-charcoal-300: #82827C;
+  --color-charcoal-400: #62625D;
+  --color-charcoal-500: #42423E;
+  --color-charcoal-600: #353531;
+  --color-charcoal-700: #282825;
+  --color-charcoal-800: #1C1C1A;
+  --color-charcoal-900: #121211;
+
+  /* TYPOGRAPHY */
+  --font-display: 'Fraunces', serif; /* Organic, highly variable serif */
+  --font-body: 'Satoshi', sans-serif; /* Clean, modern sans */
+  --font-mono: 'JetBrains Mono', monospace; /* Precise data */
+  --font-urdu: 'Noto Nastaliq Urdu', serif; /* Elegant Urdu RTL support */
+
+  /* SPACING (4px base) */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+  --space-24: 6rem;    /* 96px */
+
+  /* RADIUS (Organic, soft edges) */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-2xl: 32px;
+  --radius-3xl: 48px;
+  --radius-full: 9999px;
+
+  /* SHADOWS (Warm tinted with bark-900) */
+  --shadow-soft: 0 4px 12px rgba(38, 30, 22, 0.04), 0 2px 4px rgba(38, 30, 22, 0.02);
+  --shadow-medium: 0 12px 24px rgba(38, 30, 22, 0.06), 0 4px 8px rgba(38, 30, 22, 0.04);
+  --shadow-elevated: 0 24px 48px rgba(38, 30, 22, 0.08), 0 8px 16px rgba(38, 30, 22, 0.06);
+
+  /* DURATIONS (Motion timing) */
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+  --duration-slow: 600ms;
+  --duration-slower: 900ms;
+  --duration-drift: 2400ms;
+
+  /* EASES (No linear ever, fluid settling) */
+  --ease-out-soft: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in-out-organic: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring-gentle: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+
+
+  /* =========================================
+     LAYER 2: SEMANTIC TOKENS
+     ========================================= */
+
+  /* SURFACES */
+  --bg-canvas: var(--color-cream-50);           /* The vast background */
+  --bg-surface: var(--color-sand-50);           /* Default card/container */
+  --bg-surface-raised: var(--color-cream-100);  /* Elevated sections */
+  --bg-glass: rgba(250, 248, 245, 0.8);         /* Cream with transparency for sticky navs */
+
+  /* TEXT */
+  --text-primary: var(--color-bark-900);        /* Deepest brown for strong contrast */
+  --text-secondary: var(--color-bark-700);      /* Softer read */
+  --text-muted: var(--color-sand-500);          /* De-emphasized metadata */
+  --text-inverse: var(--color-cream-50);        /* Used on dark bgs */
+
+  /* BORDERS */
+  --border-subtle: var(--color-sand-100);       /* Barely there dividers */
+  --border-strong: var(--color-sand-300);       /* Input outlines */
+  --border-focus: var(--color-sage-400);        /* Accessibility focus rings */
+
+  /* ACCENTS */
+  --accent-primary: var(--color-sage-600);      /* The guiding path */
+  --accent-warm: var(--color-terracotta-500);   /* Emotional warmth or calls to action */
+  --accent-growth: var(--color-leaf-500);       /* Goal completion, positive feedback */
+  --accent-quiet: var(--color-sand-200);        /* Disabled states, background highlights */
+
+  /* RISK MAPPING (Rooted Voice) */
+  --risk-deep: var(--color-moss-600);           /* Low risk: Rooted, healthy */
+  --risk-shallow: var(--color-ochre-500);       /* Medium risk: Shallow roots, warning */
+  --risk-tangled: var(--color-terracotta-600);  /* High risk: Tangled, intervention needed */
+
+  /* STATES */
+  --state-success: var(--color-moss-500);       /* Success but natural */
+  --state-warning: var(--color-ochre-500);      /* Warning but calm */
+  --state-error: var(--color-terracotta-500);   /* Error but earthy, never neon red */
+  --state-info: var(--color-sage-500);          /* Information */
+
+  /* OVERLAYS */
+  --overlay-veil: rgba(38, 30, 22, 0.4);        /* Bark-900 @ 40%, grounds modals */
+
+
+  /* =========================================
+     LAYER 3: COMPONENT TOKENS
+     ========================================= */
+
+  /* BUTTONS */
+  --btn-primary-bg: var(--accent-primary);
+  --btn-primary-text: var(--text-inverse);
+  --btn-primary-hover-bg: var(--color-sage-700);
+  
+  --btn-secondary-bg: var(--bg-surface);
+  --btn-secondary-border: var(--border-strong);
+  --btn-secondary-text: var(--text-primary);
+  --btn-secondary-hover-bg: var(--color-sand-100);
+
+  /* CARDS */
+  --card-bg: var(--bg-surface);
+  --card-border: var(--border-subtle);
+  --card-shadow: var(--shadow-soft);
+  --card-radius: var(--radius-xl);
+  
+  /* INPUTS */
+  --input-bg: var(--bg-canvas);
+  --input-border: var(--border-strong);
+  --input-text: var(--text-primary);
+  --input-focus-ring: var(--border-focus);
+  --input-radius: var(--radius-lg);
+
+  /* SIDEBAR ("The Trunk") */
+  --trunk-bg: var(--color-bark-900);
+  --trunk-text: var(--color-sand-100);
+  --trunk-hover-bg: var(--color-bark-800);
+  --trunk-active-text: var(--color-cream-50);
+  --trunk-active-indicator: var(--color-sage-400);
+
+  /* GROWTH RING (Risk Visualizer) */
+  --growth-ring-track: var(--color-sand-200);
+  --growth-ring-fill-deep: var(--risk-deep);
+  --growth-ring-fill-shallow: var(--risk-shallow);
+  --growth-ring-fill-tangled: var(--risk-tangled);
+}

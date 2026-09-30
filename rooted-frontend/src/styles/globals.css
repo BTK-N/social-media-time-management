@@ -1,0 +1,219 @@
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./motion.css";
+
+/* 
+ * TAILWIND TO TOKENS BRIDGE
+ * We inject our tokens into Tailwind v4's theme using @theme.
+ * This ensures no hardcoded hex values are used in utility classes.
+ */
+@theme {
+  /* Colors - Primitives */
+  --color-bark-50: var(--color-bark-50);
+  --color-bark-100: var(--color-bark-100);
+  --color-bark-200: var(--color-bark-200);
+  --color-bark-300: var(--color-bark-300);
+  --color-bark-400: var(--color-bark-400);
+  --color-bark-500: var(--color-bark-500);
+  --color-bark-600: var(--color-bark-600);
+  --color-bark-700: var(--color-bark-700);
+  --color-bark-800: var(--color-bark-800);
+  --color-bark-900: var(--color-bark-900);
+
+  --color-sage-50: var(--color-sage-50);
+  --color-sage-100: var(--color-sage-100);
+  --color-sage-200: var(--color-sage-200);
+  --color-sage-300: var(--color-sage-300);
+  --color-sage-400: var(--color-sage-400);
+  --color-sage-500: var(--color-sage-500);
+  --color-sage-600: var(--color-sage-600);
+  --color-sage-700: var(--color-sage-700);
+  --color-sage-800: var(--color-sage-800);
+  --color-sage-900: var(--color-sage-900);
+
+  --color-moss-50: var(--color-moss-50);
+  --color-moss-100: var(--color-moss-100);
+  --color-moss-200: var(--color-moss-200);
+  --color-moss-300: var(--color-moss-300);
+  --color-moss-400: var(--color-moss-400);
+  --color-moss-500: var(--color-moss-500);
+  --color-moss-600: var(--color-moss-600);
+  --color-moss-700: var(--color-moss-700);
+  --color-moss-800: var(--color-moss-800);
+  --color-moss-900: var(--color-moss-900);
+
+  --color-leaf-50: var(--color-leaf-50);
+  --color-leaf-100: var(--color-leaf-100);
+  --color-leaf-200: var(--color-leaf-200);
+  --color-leaf-300: var(--color-leaf-300);
+  --color-leaf-400: var(--color-leaf-400);
+  --color-leaf-500: var(--color-leaf-500);
+  --color-leaf-600: var(--color-leaf-600);
+  --color-leaf-700: var(--color-leaf-700);
+  --color-leaf-800: var(--color-leaf-800);
+  --color-leaf-900: var(--color-leaf-900);
+
+  --color-terracotta-50: var(--color-terracotta-50);
+  --color-terracotta-100: var(--color-terracotta-100);
+  --color-terracotta-200: var(--color-terracotta-200);
+  --color-terracotta-300: var(--color-terracotta-300);
+  --color-terracotta-400: var(--color-terracotta-400);
+  --color-terracotta-500: var(--color-terracotta-500);
+  --color-terracotta-600: var(--color-terracotta-600);
+  --color-terracotta-700: var(--color-terracotta-700);
+  --color-terracotta-800: var(--color-terracotta-800);
+  --color-terracotta-900: var(--color-terracotta-900);
+
+  --color-sand-50: var(--color-sand-50);
+  --color-sand-100: var(--color-sand-100);
+  --color-sand-200: var(--color-sand-200);
+  --color-sand-300: var(--color-sand-300);
+  --color-sand-400: var(--color-sand-400);
+  --color-sand-500: var(--color-sand-500);
+  --color-sand-600: var(--color-sand-600);
+  --color-sand-700: var(--color-sand-700);
+  --color-sand-800: var(--color-sand-800);
+  --color-sand-900: var(--color-sand-900);
+
+  --color-cream-50: var(--color-cream-50);
+  --color-cream-100: var(--color-cream-100);
+
+  --color-charcoal-50: var(--color-charcoal-50);
+  --color-charcoal-100: var(--color-charcoal-100);
+  --color-charcoal-200: var(--color-charcoal-200);
+  --color-charcoal-300: var(--color-charcoal-300);
+  --color-charcoal-400: var(--color-charcoal-400);
+  --color-charcoal-500: var(--color-charcoal-500);
+  --color-charcoal-600: var(--color-charcoal-600);
+  --color-charcoal-700: var(--color-charcoal-700);
+  --color-charcoal-800: var(--color-charcoal-800);
+  --color-charcoal-900: var(--color-charcoal-900);
+
+  --color-ochre-50: var(--color-ochre-50);
+  --color-ochre-100: var(--color-ochre-100);
+  --color-ochre-200: var(--color-ochre-200);
+  --color-ochre-300: var(--color-ochre-300);
+  --color-ochre-400: var(--color-ochre-400);
+  --color-ochre-500: var(--color-ochre-500);
+  --color-ochre-600: var(--color-ochre-600);
+  --color-ochre-700: var(--color-ochre-700);
+  --color-ochre-800: var(--color-ochre-800);
+  --color-ochre-900: var(--color-ochre-900);
+
+  /* Colors - Semantics */
+  --color-canvas: var(--bg-canvas);
+  --color-surface: var(--bg-surface);
+  --color-surface-raised: var(--bg-surface-raised);
+  --color-glass: var(--bg-glass);
+  
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-muted: var(--text-muted);
+  --color-inverse: var(--text-inverse);
+  
+  --color-border: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+  --color-focus: var(--border-focus);
+  
+  --color-accent: var(--accent-primary);
+  --color-accent-warm: var(--accent-warm);
+  --color-accent-growth: var(--accent-growth);
+  --color-accent-quiet: var(--accent-quiet);
+
+  --color-risk-deep: var(--risk-deep);
+  --color-risk-shallow: var(--risk-shallow);
+  --color-risk-tangled: var(--risk-tangled);
+
+  --color-state-success: var(--state-success);
+  --color-state-warning: var(--state-warning);
+  --color-state-error: var(--state-error);
+  --color-state-info: var(--state-info);
+
+  --color-trunk-bg: var(--trunk-bg);
+  --color-trunk-text: var(--trunk-text);
+  --color-trunk-hover-bg: var(--trunk-hover-bg);
+  --color-trunk-active-text: var(--trunk-active-text);
+  --color-trunk-active-indicator: var(--trunk-active-indicator);
+
+  /* Typography */
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+  --font-urdu: var(--font-urdu);
+
+  /* Radii */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
+  --radius-3xl: var(--radius-3xl);
+  --radius-full: var(--radius-full);
+
+  /* Box Shadows */
+  --shadow-soft: var(--shadow-soft);
+  --shadow-medium: var(--shadow-medium);
+  --shadow-elevated: var(--shadow-elevated);
+
+  /* Transitions */
+  --ease-soft: var(--ease-out-soft);
+  --ease-organic: var(--ease-in-out-organic);
+  --ease-spring: var(--ease-spring-gentle);
+  
+  --duration-fast: var(--duration-fast);
+  --duration-base: var(--duration-base);
+  --duration-slow: var(--duration-slow);
+  --duration-slower: var(--duration-slower);
+  --duration-drift: var(--duration-drift);
+}
+
+@layer base {
+  /* APP SHELL BASE STYLES */
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Subtle SVG grain background (warm, ~3% opacity) */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+
+  /* RTL Support for Urdu */
+  html[dir="rtl"] body {
+    font-family: var(--font-urdu), var(--font-body);
+  }
+
+  /* Focus rings */
+  *:focus-visible {
+    outline: 2px solid var(--border-focus);
+    outline-offset: 2px;
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: var(--color-sage-200);
+    color: var(--color-bark-900);
+  }
+
+  /* Warm thin scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-sand-300);
+    border-radius: var(--radius-full);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-sand-400);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-on-scroll { opacity: 1 !important; transform: none !important; }
+}

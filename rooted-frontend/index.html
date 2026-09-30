@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+    
+    <!-- Fontshare -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet">
+
+    <title>Rooted</title>
+  </head>
+  <body>
+    <div id="error-overlay" style="color: red; padding: 20px; font-family: monospace; white-space: pre-wrap; font-size: 14px;"></div>
+    <script>
+      window.addEventListener("error", function(e) {
+        document.getElementById("error-overlay").textContent += e.message + "\n" + (e.error && e.error.stack ? e.error.stack : "") + "\n\n";
+      });
+      window.addEventListener("unhandledrejection", function(e) {
+        document.getElementById("error-overlay").textContent += "Unhandled Promise Rejection: " + e.reason + "\n\n";
+      });
+    </script>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div id="root"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

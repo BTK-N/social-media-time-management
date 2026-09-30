@@ -1,0 +1,123 @@
+/*
+ * ROOTED DESIGN SYSTEM - MOTION PRESETS
+ * Metaphor: Organic, Grounded, Natural Growth
+ */
+
+/* Respect User Preferences */
+@media (prefers-reduced-motion: no-preference) {
+  
+  /* 
+   * 1. BREATHE 
+   * Use: 6s idle breathing loop. Good for the AI Chatbot avatar 
+   * or empty state illustrations to give them life.
+   */
+  .motion-breathe {
+    animation: breathe 6s var(--ease-in-out-organic) infinite alternate;
+  }
+  @keyframes breathe {
+    0%   { transform: scale(1); opacity: 0.95; }
+    100% { transform: scale(1.02); opacity: 1; }
+  }
+
+  /* 
+   * 2. SWAY
+   * Use: ±2° rotation, 8s loop. For leaves, organic accents, and 
+   * floating icons to feel affected by wind.
+   */
+  .motion-sway {
+    animation: sway 8s var(--ease-in-out-organic) infinite alternate;
+    transform-origin: bottom center;
+  }
+  @keyframes sway {
+    0%   { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+  }
+
+  /* 
+   * 3. DRIFT
+   * Use: Slow position drift, 12s loop. For background blobs,
+   * subtle mycelium textures, or soft lighting overlays.
+   */
+  .motion-drift {
+    animation: drift 12s var(--ease-in-out-organic) infinite alternate;
+  }
+  @keyframes drift {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(10px, -15px); }
+  }
+
+  /* 
+   * 4. UNFURL
+   * Use: scaleY 0 -> 1. For reveals, accordions, and dropdowns. 
+   * Mimics a leaf unrolling from the stem.
+   */
+  .motion-unfurl {
+    animation: unfurl var(--duration-slow) var(--ease-spring-gentle) forwards;
+    transform-origin: top;
+    opacity: 0;
+  }
+  @keyframes unfurl {
+    0%   { transform: scaleY(0.8); opacity: 0; }
+    100% { transform: scaleY(1); opacity: 1; }
+  }
+
+  /* 
+   * 5. ROOT
+   * Use: translateY 16px -> 0. For page entrances, cards settling.
+   * Elements feel heavy and ground themselves downwards into place.
+   */
+  .motion-root {
+    animation: root var(--duration-base) var(--ease-out-soft) forwards;
+    opacity: 0;
+  }
+  @keyframes root {
+    0%   { transform: translateY(16px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  /* 
+   * 6. BLOOM
+   * Use: scale 0.9 -> 1.02 -> 1. For goal completions, success states,
+   * buttons being pressed, or risk rings finalizing. Soft overshoot.
+   */
+  .motion-bloom {
+    animation: bloom var(--duration-slow) var(--ease-spring-gentle) forwards;
+    transform-origin: center;
+  }
+  @keyframes bloom {
+    0%   { transform: scale(0.9); opacity: 0; }
+    70%  { transform: scale(1.02); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  /* 
+   * 7. MIST
+   * Use: blur 8px -> 0. For text reveals, AI consultation generation,
+   * or loading screens clearing up.
+   */
+  .motion-mist {
+    animation: mist var(--duration-slow) var(--ease-out-soft) forwards;
+    opacity: 0;
+  }
+  @keyframes mist {
+    0%   { filter: blur(8px); opacity: 0; }
+    100% { filter: blur(0px); opacity: 1; }
+  }
+}
+
+/* Fallback for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .motion-breathe,
+  .motion-sway,
+  .motion-drift,
+  .motion-unfurl,
+  .motion-root,
+  .motion-bloom,
+  .motion-mist {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}

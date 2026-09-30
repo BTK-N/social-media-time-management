@@ -1,0 +1,171 @@
+{
+  "welcome": {
+    "eyebrow": "DIGITAL WELLBEING",
+    "headline": "Grow deep in a shallow world.",
+    "subheadline": "Rooted helps you understand how social media shapes your mind — and grow the quiet, intentional habits that replace the scroll.",
+    "trust": {
+      "checkIn": "A calm check-in, not a diagnosis",
+      "private": "Private by default",
+      "languages": "English · اردو"
+    },
+    "footer": {
+      "signature": "Rooted · v1.0 · Made with soil and patience"
+    },
+    "tab": {
+      "return": "Return",
+      "plant": "Plant"
+    },
+    "form": {
+      "login": {
+        "title": "Return to the garden",
+        "submit": "Return to the garden",
+        "loading": "Opening the gate…"
+      },
+      "signup": {
+        "title": "Plant a new seed",
+        "submit": "Plant my seed",
+        "loading": "Preparing the soil…"
+      },
+      "username": {
+        "placeholder": "your garden name"
+      },
+      "password": {
+        "placeholder": "your quiet key"
+      },
+      "confirm": {
+        "placeholder": "confirm your key"
+      },
+      "forgot": "Forgot your key?",
+      "forgotTooltip": "Coming later. Ask an arborist.",
+      "consent": "I understand Rooted is a companion, not a clinician.",
+      "error": {
+        "invalidCredentials": "The path is overgrown. Try your key again.",
+        "passwordShort": "Your key needs more ridges (at least 6 characters).",
+        "passwordMismatch": "These keys don't match.",
+        "usernameTaken": "This patch of soil is already taken."
+      }
+    },
+    "register": {
+      "success": {
+        "title": "Your soil is prepared.",
+        "cta": "Return to the garden"
+      }
+    },
+    "privacy": {
+      "link": "Privacy"
+    },
+    "language": {
+      "toggle": "اردو"
+    }
+  },
+  "diagnosis": {
+    "title": "Listen to the soil",
+    "subtitle": "Answer honestly. The garden does not judge.",
+    "step1": {
+      "title": "The Seed",
+      "age": "Your age",
+      "gender": "Gender",
+      "genderOptions": [
+        "Female",
+        "Male",
+        "Other"
+      ],
+      "relationship": "Relationship Status",
+      "relationshipOptions": [
+        "Single",
+        "In a relationship",
+        "Married"
+      ],
+      "occupation": "Occupation",
+      "occupationOptions": [
+        "Unemployed",
+        "Student",
+        "Salaried",
+        "Self-Employed"
+      ],
+      "orgType": "Environment",
+      "orgTypeOptions": [
+        "None",
+        "University",
+        "Corporate",
+        "Government"
+      ],
+      "platforms": "Active Platforms"
+    },
+    "step2": {
+      "title": "The Rain",
+      "usageHours": "Daily hours scrolling",
+      "purposeless": "I scroll without knowing why",
+      "distracted": "Notifications break my focus",
+      "restless": "I feel restless without my phone"
+    },
+    "step3": {
+      "title": "The Roots",
+      "concentration": "My ability to concentrate",
+      "focusIssue": "I struggle to maintain focus",
+      "comparison": "I compare my life to others",
+      "comparisonFeelings": "These comparisons weigh heavy",
+      "validation": "I need likes and comments",
+      "interestFluctuation": "My interest in real life fades"
+    },
+    "scale": {
+      "1": "Rarely",
+      "5": "Always"
+    },
+    "concentrationScale": {
+      "1": "Poor",
+      "5": "Excellent"
+    },
+    "next": "Next",
+    "back": "Back",
+    "submit": "Reveal",
+    "loading": "Listening...",
+    "result": {
+      "title": "Your Roots",
+      "risk": "Risk Level",
+      "score": "Impact Score",
+      "consultation": "The Arborist Says...",
+      "download": "Save this reading"
+    }
+  },
+  "sidebar": {
+    "greeting": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening",
+      "night": "Rest easy"
+    },
+    "logout": "Leave garden",
+    "diagnosis": "Soil Check",
+    "chat": "The Arborist",
+    "goals": "Tending",
+    "history": "Growth Log",
+    "insights": "Deep Roots"
+  },
+  "chat": {
+    "eyebrow": "The Arborist",
+    "title": "Nurture your growth",
+    "subtitle": "Speak to the Arborist about your digital habits, and gently untangle your roots.",
+    "input_placeholder": "Share your thoughts with the Arborist...",
+    "initial_greeting": "Hello. I am the Arborist. How is your garden growing today?",
+    "error_fallback": "It seems there is a disruption in the mycelium network. Please try again."
+  },
+  "goals": {
+    "eyebrow": "Tending",
+    "title": "Garden Maintenance",
+    "subtitle": "Plant new intentions and water them daily.",
+    "new": "Plant a new seed",
+    "days": "days"
+  },
+  "history": {
+    "eyebrow": "Reflection",
+    "title": "Growth Log",
+    "subtitle": "Look back at your seasons of growth and observe the patterns.",
+    "new": "Take a new reading"
+  },
+  "insights": {
+    "eyebrow": "Connections",
+    "title": "Deep Roots",
+    "subtitle": "Beneath the surface, patterns emerge. See how your habits connect."
+  }
+}
